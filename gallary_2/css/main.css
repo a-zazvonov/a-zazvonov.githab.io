@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #eee;
+	font-family: ZCOOL QingKe HuangYou;
+}
+.main{
+	display: flex;
+	background-color: #fff;
+	width: 95%;
+	max-width: 1000px;
+	margin: auto;
+	box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
+	flex-wrap: wrap;
+}
+/*.img-box{
+	column-count: 4;
+	column-gap: 0;
+}*/
+.item{
+	max-height: 265px;
+	max-width: 498px;
+	width: calc(95vw / 2 / - 10px);
+	height: calc(95vw / 2 / 16 * 9);
+	background-color: blue;
+	background-position: center;
+	background-size: cover;
+	transition: 0.6s;
+	opacity: 0.4;
+}
+.item:hover{
+	opacity: 1;
+	/*transform: scale(1.1);*/
+	/*transform: rotate(5deg);*/
+	/*transform: skewX(15deg);*/
+	/*s*/
+	/*transform: translate(15px 30px);*/
+	/*transform: rotate(45deg);*/
+	/*transform-origin: 20% 40%;*/
+}
+.heading{
+	font-size: 40px;
+	text-align: center;
+	width: 100%;
+	margin: 15px 0;
+}
+.img_link{
+	max-width: 490px;
+	max-height: 265px;
+	width: calc(50% - 10px);
+	height: calc(95vw / 2 / 16 * 9);
+	margin: 5px;
+}
+@media screen (max-width: 320px){
+	.item{
+		max-width: 100%;
+		max-height: 100%;
+		width: 95vw;
+		height: 500px;
+	}
+	.img_link{
+		max-width: 100%;
+		max-height: 100%;
+		width: calc(100% - 10px);
+		margin: 5px 0;
+	}
+}
